@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CadProLED - Importação</title>
+        <link rel="icon" type="image/png" href="image/ALED-ICON.png" />
+        
+        <!-- FONTE UBUNTU: -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- CSS: -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylepainel.css" />
+    </head>
+    <body>
+
+        <div class="container"><!--PAINEL FUNCIONÁRIO-->
+            <nav><!--MENU-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <img src="image/ALED-ICON.png" width="48" /> </span>
+                            <span class="title"><b>CadProLED</b></span>
+                        </a>						
+                    </li>
+                        <li class="withSubmenu">
+                        <a href="#" title="Cadastros">
+                            <span class="icon"> <img src="icons/icon-cadastros.png" /> </span>
+                            <span class="title"> Cadastros </span>
+                            <img src="icons/icon-arrow-left.png" />
+                        </a>
+                    
+                        <ul class="submenu">
+                            <li>
+                                <a href="formulariocadastro.html" title="Cadastro de Produto">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Cadastro de Produto </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="uploadplanilhaforn.html" title="Importar Planilha">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Importar Planilha </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="uploadimagensforn.html" title="Upload de Imagens">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Upload de Imagens </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="suporteforn.html" title="Suporte">
+                            <span class="icon"> <img src="icons/icon-configuracoes.png" /> </span>
+                            <span class="title"> Suporte </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="home.html" title="Sair">
+                            <span class="icon"> <img src="icons/icon-sair.png" /> </span>
+                            <span class="title"> Sair </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="user"> Importação de Planilha </div>
+                </div>
+    
+                <div class="content"><!--UPLOAD DE IMAGENS-->
+
+                    <div class="title">Upload de Planilha</div>
+
+                        <div class="form">
+                            <form method="GET" action="">
+
+                                <input type="hidden" name="report-mode">
+
+                                <div class="group">
+                                    <label>
+                                        <span>Fornecedor:</span>
+                                        <input type="text" name="Fornecedor"/>
+                                    </label>
+
+                                    <label>
+                                        <span>Comprador Responsável:</span>
+                                        <input type="text" name="Comprador" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Mensagem anexada:</span>
+                                        <input type="text" name="Mensagem" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Importar Planilha: <small>(seguir modelo disponível para download, formato .xls)</small></span>
+                                        <input type="file" name="planilha" accept=".xls" />
+                                    </label>
+                                </div><br>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Clique no link abaixo para fazer o download do modelo de importação:</span>
+                                        <a href="caminho_para_seu_documento.pdf" download="ModeloImportacao_CadProLED.pdf">Modelo de importação CadProLED.xls</a>
+                                    </label>
+                                </div>
+
+                                <div class="btns">
+                                    <input type="button" value="Carregar" name="carregar" class="btn-standard" />
+                                    <input type="button" value="Cancelar" name="cancelar" class="btn-standard" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>                    
+                </div>
+    
+                <div style="color: #eee;">_</div>
+            </div>            
+        </div>
+
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

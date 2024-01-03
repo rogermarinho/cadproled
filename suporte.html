@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CadProLED - Suporte</title>
+        <link rel="icon" type="image/png" href="image/ALED-ICON.png" />
+        
+        <!-- FONTE UBUNTU: -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- CSS: -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylepainel.css" />
+    </head>
+    <body>
+
+        <div class="container"><!--PAINEL FUNCIONÁRIO-->
+            <nav><!--MENU-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <img src="image/ALED-ICON.png" width="48" /> </span>
+                            <span class="title"><b>CadProLED</b></span>
+                        </a>						
+                    </li>
+    
+                    <li class="active">
+                        <a href="painelfuncionario.html" title="Painel">
+                            <span class="icon"> <img src="icons/icon-painel.png" /> </span>
+                            <span class="title"> Painel </span>
+                        </a>
+                    </li>
+    
+                    <li class="withSubmenu">
+                        <a href="#" title="Cadastros">
+                            <span class="icon"> <img src="icons/icon-cadastros.png" /> </span>
+                            <span class="title"> Cadastros </span>
+                            <img src="icons/icon-arrow-left.png" />
+                        </a>
+                    
+                        <ul class="submenu">
+                            <li>							
+                                <a href="formulariosolicitacao.html" title="Solicitação de Cadastro">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Solicitação de Cadastro </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="andamentosolicitacoes.html" title="Andamento Solicitações">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Andamento Solicitações </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="validacoescomerciais.html" title="Validações Comerciais">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Validações Comerciais </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="validacoesfiscais.html" title="Validações Fiscais">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Validações Fiscais </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="uploadimagens.html" title="Upload de Imagens">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Upload de Imagens </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="suporte.html" title="Suporte">
+                            <span class="icon"> <img src="icons/icon-configuracoes.png" /> </span>
+                            <span class="title"> Suporte </span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="home.html" title="Sair">
+                            <span class="icon"> <img src="icons/icon-sair.png" /> </span>
+                            <span class="title"> Sair </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="user"> Suporte </div>
+                </div>
+    
+                <div class="content"><!--SUPORTE-->
+                      
+                    <div class="title">Solicitar Suporte</div>
+
+                    <div class="form">
+                        <form action="" method="GET">
+
+                            <input type="hidden" name="report-mode">
+
+                            <div class="group">
+                                <label>
+                                    <span>Nome do solicitante</span>
+                                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Setor</span>
+                                    <input type="text" name="setor" id="setor" class="inputUser" required>
+                                </label>
+                            </div>
+                                
+                            <div class="group">
+                                <label>
+                                    <span>Email</span>
+                                    <input type="text" name="email" id="email" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Telefone</span>
+                                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                                </label>
+                            </div><br><br>
+
+                            <div class="group">
+                                <label>
+                                    <span>Descrição do problema</span>
+                                    <input type="text" name="descricaoprob" id="descricaoprob" class="inputUser" required><br>
+                                </label>                                    
+                            </div>
+
+                            <div class="btns">
+                                <input type="submit" name="submit" id="submit" class="btn-standard">
+                            </div>
+                                                    
+                        </form>
+                    </div>    	
+                    
+                </div>
+    
+                <div style="color: #eee;">_</div>
+
+            </div>            
+        </div>
+
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

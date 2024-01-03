@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CadProLED - Upload de Imagens</title>
+        <link rel="icon" type="image/png" href="image/ALED-ICON.png" />
+        
+        <!-- FONTE UBUNTU: -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- CSS: -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylepainel.css" />
+    </head>
+    <body>
+
+        <div class="container"><!--PAINEL FUNCIONÁRIO-->
+            <nav><!--MENU-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <img src="image/ALED-ICON.png" width="48" /> </span>
+                            <span class="title"><b>CadProLED</b></span>
+                        </a>						
+                    </li>
+                        <li class="withSubmenu">
+                        <a href="#" title="Cadastros">
+                            <span class="icon"> <img src="icons/icon-cadastros.png" /> </span>
+                            <span class="title"> Cadastros </span>
+                            <img src="icons/icon-arrow-left.png" />
+                        </a>
+                    
+                        <ul class="submenu">
+                            <li>
+                                <a href="formulariocadastro.html" title="Cadastro de Produto">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Cadastro de Produto </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="uploadplanilhaforn.html" title="Importar Planilha">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Importar Planilha </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="uploadimagensforn.html" title="Upload de Imagens">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Upload de Imagens </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="suporteforn.html" title="Suporte">
+                            <span class="icon"> <img src="icons/icon-configuracoes.png" /> </span>
+                            <span class="title"> Suporte </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="home.html" title="Sair">
+                            <span class="icon"> <img src="icons/icon-sair.png" /> </span>
+                            <span class="title"> Sair </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="user"> Upload de Imagens </div>
+                </div>
+    
+                <div class="content"><!--UPLOAD DE IMAGENS-->
+
+                    <div class="title">Upload de Imagens de Produtos</div>
+
+                        <div class="search">
+                            <form method="GET" action="">
+
+                                <input type="hidden" name="report-mode">
+
+                                <div class="group">
+                                    <label>
+                                        <span>ID Produto:</span>
+                                        <input type="text" name="id" data-format-mask="number-int"/>
+                                    </label>
+
+                                    <label>
+                                        <span>Referência do Produto:</span>
+                                        <input type="text" name="referenciaproduto" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Descrição do Produto:</span>
+                                        <input type="text" name="Produto" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Fornecedor Responsável:</span>
+                                        <input type="text" name="Fornecedor" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Imagem do Produto: <small>(até 350 KB, formato JPG)</small></span>
+                                        <input type="file" name="imagem" accept=".jpg" />
+                                    </label>
+                                </div>
+
+                                <div class="btns">
+                                    <input type="button" value="Carregar" name="carregar" class="btn-standard" />
+                                    <input type="button" value="Cancelar" name="cancelar" class="btn-standard" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>                    
+                </div>
+    
+                <div style="color: #eee;">_</div>
+            </div>            
+        </div>
+
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

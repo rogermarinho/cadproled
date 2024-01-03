@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+            <meta lang="pt-br">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CadProLED - Solicitação</title>
+            <link rel="icon" type="image/png" href="image/ALED-ICON.png" />
+            
+            <!-- FONTE UBUNTU: -->
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+            <!-- CSS: -->
+            <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+            <link rel="stylesheet" type="text/css" href="css/stylepainel.css" />
+    </head>
+    <body>
+        
+        <div class="container"><!--PAINEL FUNCIONÁRIO-->
+            <nav><!--MENU-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <img src="image/ALED-ICON.png" width="48" /> </span>
+                            <span class="title"><b>CadProLED</b></span>
+                        </a>						
+                    </li>
+                        <li class="withSubmenu">
+                        <a href="#" title="Cadastros">
+                            <span class="icon"> <img src="icons/icon-cadastros.png" /> </span>
+                            <span class="title"> Cadastros </span>
+                            <img src="icons/icon-arrow-left.png" />
+                        </a>
+                    
+                        <ul class="submenu">
+                            <li>
+                                <a href="formulariocadastro.html" title="Cadastro de Produto">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Cadastro de Produto </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="uploadplanilhaforn.html" title="Importar Planilha">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Importar Planilha </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="uploadimagensforn.html" title="Upload de Imagens">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Upload de Imagens </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="suporteforn.html" title="Suporte">
+                            <span class="icon"> <img src="icons/icon-configuracoes.png" /> </span>
+                            <span class="title"> Suporte </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="home.html" title="Sair">
+                            <span class="icon"> <img src="icons/icon-sair.png" /> </span>
+                            <span class="title"> Sair </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <div class="main">
+                <div  class="topbar">
+                    <div class="toggle">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="user"> Formulário de Cadastro </div>
+                </div>
+            
+                <div class="content"><!--FORMULÁRIO DE CADASTRO-->
+
+                    <div class="title">Cadastro de Produto</div>
+
+                    <div class="form">
+                        <form action="" method="GET">
+
+                            <input type="hidden" name="report-mode">
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Nome do Fornecedor</span>
+                                    <input type="text" name="fornecedor" id="fornecedor" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Nome do Representante</span>
+                                    <input type="text" name="representante" id="representante" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Nome do Comprador Responsável</span>
+                                    <input type="text" name="comprador" id="comprador" class="inputUser" required>
+                                </label>
+
+                            </div><br><br>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Descrição do Produto</span>
+                                    <input type="text" name="descricaoforn" id="descricaoforn" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Referência do Produto</span>
+                                    <input type="text" name="refforn" id="refforn" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Código de Barras</span>
+                                    <input type="text" name="codbarras" id="codbarras" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Marca</span>
+                                    <input type="text" name="marca" id="marca" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Cor do Produto</span>
+                                    <input type="text" name="corprod" id="corprod" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Classe Fiscal (NCM)</span>
+                                    <input type="text" name="clasfiscal" id="clasfiscal" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>CEST</span>
+                                    <input type="text" name="cest" id="cest" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+
+                                <label>
+                                    <span>Procedência do Produto</span>
+                                    <select name="procedencia" id="procedencia" required>
+                                        <option value="nacional">Nacional</option>
+                                        <option value="importado">Importado</option>
+                                        <option value="local">Produção Local</option>
+                                    </select>
+                                </label>
+
+                                <label>                                   
+                                    <span>Tipo de Embalagem</span>
+                                    <select name="tipodeembalagem" id="tipodeembalagem" required>
+                                        <option value="caixa">Caixa</option>
+                                        <option value="saco">Saco</option>
+                                        <option value="unit">Unitário</option>
+                                    </select>
+                                </label>
+
+                                <label>
+                                    <span>Unidade de Medida</span>
+                                    <select name="unidadeMedida" id="unidadeMedida" required>
+                                        <option value="und">Unidade</option>
+                                        <option value="tela">Tela</option>
+                                        <option value="rolo">Rolo</option>
+                                        <option value="par">Par</option>
+                                        <option value="pacote">Pacote</option>
+                                        <option value="pack">Pack</option>
+                                        <option value="metro">Metro</option>
+                                        <option value="kit">Kit</option>
+                                        <option value="kilo">Kilograma</option>
+                                    </select>
+                                </label>
+                            
+                            </div>
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Cor do Produto</span>
+                                    <input type="text" name="corprod" id="corprod" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Classe Fiscal (NCM)</span>
+                                    <input type="text" name="clasfiscal" id="clasfiscal" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>CEST</span>
+                                    <input type="text" name="cest" id="cest" class="inputUser" required>
+                                </label>
+
+                            </div>
+
+                            <div class="group">
+
+                                <label>
+                                    <span>Cubagem da Embalagem</span>
+                                    <caixa>
+                                        <label for="CubagemEmbPeso">Peso (kg) <input type="number" id="CubagemEmbPeso" required></label>
+                                        <label for="CubagemEmbAltura">Altura (cm) <input type="number" id="CubagemEmbAltura" required></label>
+                                        <label for="CubagemEmbLargura">Largura (cm) <input type="number" id="CubagemEmbLargura" required></label>
+                                        <label for="CubagemEmbComprimento">Comprimento (cm) <input type="number" id="CubagemEmbComprimento" required></label>
+                                    </caixa>
+                                </label>
+
+                                <label>
+                                    <span>Cubagem do Produto</span>
+                                    <caixa>
+                                        <label for="CubagemProdPeso">Peso (kg) <input type="number" id="CubagemProdPeso" required></label>
+                                        <label for="CubagemProdAltura">Altura (cm) <input type="number" id="CubagemProdAltura" required></label>
+                                        <label for="CubagemProdLargura">Largura (cm) <input type="number" id="CubagemProdLargura" required></label>
+                                        <label for="CubagemProdComprimento">Comprimento (cm) <input type="number" id="CubagemProdComprimento" required></label>
+                                    </caixa>
+                                </label>
+
+                            </div>                            
+
+                            <div class="group">
+                                
+                                <label>
+                                    <span>Quantidade por Embalagem</span>
+                                    <input type="number" name="quantembalagem" id="quantembalagem" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Garantia do Fabricante (meses)</span>
+                                    <input type="number" name="GarantiaFab" id="GarantiaFab" class="inputUser" required>
+                                </label>
+
+                                <label>
+                                    <span>Disponibilidade no Site ALED</span>
+                                    <select name="dispsite" id="dispsite" required>
+                                        <option value="sim">Sim</option>
+                                        <option value="nao">Não</option>
+                                    </select>
+                                </label>
+
+                                <label>
+                                    <span>Disponibilidade nos Marketplaces ALED</span>
+                                    <select name="dispmktp" id="dispmktp" required>
+                                        <option value="sim">Sim</option>
+                                        <option value="nao">Não</option>
+                                    </select>
+                                </label>
+
+                            </div>
+
+                            <div class="btns">
+                                <input type="submit" name="submit" id="submit" class="btn-standard">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CadProLED - Andamento</title>
+        <link rel="icon" type="image/png" href="image/ALED-ICON.png" />
+        
+        <!-- FONTE UBUNTU: -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- CSS: -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylepainel.css" />
+    </head>
+    <body>
+
+        <div class="container"><!--PAINEL FUNCIONÁRIO-->
+            <nav><!--MENU-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <img src="image/ALED-ICON.png" width="48" /> </span>
+                            <span class="title"><b>CadProLED</b></span>
+                        </a>						
+                    </li>
+    
+                    <li class="active">
+                        <a href="painelfuncionario.html" title="Painel">
+                            <span class="icon"> <img src="icons/icon-painel.png" /> </span>
+                            <span class="title"> Painel </span>
+                        </a>
+                    </li>
+    
+                    <li class="withSubmenu">
+                        <a href="#" title="Cadastros">
+                            <span class="icon"> <img src="icons/icon-cadastros.png" /> </span>
+                            <span class="title"> Cadastros </span>
+                            <img src="icons/icon-arrow-left.png" />
+                        </a>
+                    
+                        <ul class="submenu">
+                            <li>							
+                                <a href="formulariosolicitacao.html" title="Solicitação de Cadastro">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Solicitação de Cadastro </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="andamentosolicitacoes.html" title="Andamento Solicitações">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Andamento Solicitações </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="validacoescomerciais.html" title="Validações Comerciais">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Validações Comerciais </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="validacoesfiscais.html" title="Validações Fiscais">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Validações Fiscais </span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="uploadimagens.html" title="Upload de Imagens">
+                                    <span class="icon"> <div class="img"></div> </span>
+                                    <span class="title"> Upload de Imagens </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="suporte.html" title="Suporte">
+                            <span class="icon"> <img src="icons/icon-configuracoes.png" /> </span>
+                            <span class="title"> Suporte </span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="home.html" title="Sair">
+                            <span class="icon"> <img src="icons/icon-sair.png" /> </span>
+                            <span class="title"> Sair </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="user"> Andamento das Solicitações </div>
+                </div>
+    
+                <div class="content"><!--ANDAMENTO DAS SOLICITAÇÕES-->
+                    
+                    <div class="title">Solicitações</div>
+
+                        <div class="search">
+                            <form method="GET" action="">
+
+                                <input type="hidden" name="report-mode">
+
+                                <div class="group">
+                                    <label>
+                                        <span>ID Solicitação:</span>
+                                        <input type="text" name="id" data-format-mask="number-int"/>
+                                    </label>
+                                    <label>
+                                        <span>Situação:</span>
+                                        <input type="text" name="situacao" />
+                                    </label>
+                                </div>
+
+                                <div class="group">
+                                    <label>
+                                        <span>Solicitante:</span>
+                                        <input type="text" name="nome" />
+                                    </label>
+                                </div>
+
+                                <div class="btns">
+                                    <input type="button" value="Buscar"          name="buscar"          class="btn-standard" />
+                                    <input type="button" value="Gerar relatório" name="gerar-relatorio" class="btn-standard" />
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="data-table">
+                            <table>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome do Solicitante</th>
+                                    <th>Produto</th>
+                                    <th>Situação</th>                           
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>Fulano da Silva</td>
+                                    <td>Lâmpada LED Bulbo A60 15W 3000K Quente E27 Ledbox</td>
+                                    <td>Em análise</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>Beltrano Farias</td>
+                                    <td>Refletor LED Slim 100W Preto 6500K Frio Bivolt Ledbox</td>
+                                    <td>Em validação comercial</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sicrano Martins</td>
+                                    <td>Abajur Aurora 1xE27 Branco 46cm Ledbox</td>
+                                    <td>Finalizado</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ciprião da Costa</td>
+                                    <td>Embutido LED Solo 10W Preto 3000K Quente IP67 Ledbox</td>
+                                    <td>Aguardando Integração</td>
+                                </tr>
+                            </table>
+                        </div>                    
+                </div>
+
+                <div style="color: #eee;">_</div>
+                
+            </div>            
+        </div>
+
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
